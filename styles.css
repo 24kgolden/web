@@ -1,0 +1,115 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    position: relative;
+    z-index: 2; /* Por encima del fondo de estrellas */
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  /* Título y párrafos */
+  h1 {
+    font-size: 3em;
+    animation: parpadeo 1s infinite alternate;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  /* Botón minimalista */
+  button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Clase para elementos ocultos */
+  .oculto {
+    display: none;
+  }
+  
+  /* Animación de parpadeo */
+  @keyframes parpadeo {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+  }
+  
+  /* Fondo de estrellas animadas */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: estrellas 50s linear infinite;
+    z-index: 1;
+  }
+  
+  @keyframes estrellas {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 1000px; }
+  }
+  
+  /* Animaciones para flores y corazones flotantes */
+  .flor, .corazon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: flotar 5s infinite ease-in-out;
+  }
+  
+  .flor { 
+    background: url('https://cdn-icons-png.flaticon.com/128/4825/4825082.png') no-repeat center/cover; 
+  }
+  
+  .corazon { 
+    background: url('https://cdn-icons-png.flaticon.com/128/833/833472.png') no-repeat center/cover; 
+  }
+  
+  @keyframes flotar {
+    0% { transform: translateY(100vh); opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+  }
+  
+  /* Animación para los animales */
+  .animal {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    animation: mover 8s infinite alternate linear;
+  }
+  
+  /* Clase para que los animales celebren (movimiento más rápido) */
+  .animal.celebrando {
+    animation-duration: 2s !important;
+  }
+  
+  @keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
+  }
+  
+
+

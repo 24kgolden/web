@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz Cumpleaños! 🎉</title>
+  <!-- Enlazamos la hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ícono de la pestaña: una rosa -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2278/2278992.png" type="image/png">
+</head>
+<body>
+  <!-- Fondo de estrellas -->
+  <div class="stars"></div>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <h1>🎉 ¡Feliz Cumpleaños! 🎂</h1>
+    <p>Que tengas un día increíble lleno de amor y felicidad. 💖</p>
+    <button id="btnSorpresa">🎁 Sorpresa</button>
+    <p id="mensaje" class="oculto">🎶 ¡Que los cumplas feliz! 🎶</p>
+  </div>
+
+  <!-- Audio de felicitación (se reproducirá al pulsar el botón) -->
+  <audio id="sonidoSorpresa">
+    <source src="felicitaciones.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Música de fondo (se reproduce en bucle) -->
+  <audio id="musica" autoplay loop>
+    <source src="BASE DE GUITARRA - Guitar Boom Bap Beat - FREESTYLE - Acoustic Lofi - ACEITUNA BEAT.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Enlazamos el script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
